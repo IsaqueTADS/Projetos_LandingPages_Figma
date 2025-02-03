@@ -1,0 +1,40 @@
+header {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.nav-lista {
+  display: flex;
+  gap: 20px;
+}
+.nav-lista li:hover {
+  text-decoration: underline;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.nav-icons span {
+  font-size: 1.5rem;
+}
+
+.nav-icons img {
+  width: 20px;
+  height: 20px;
+}

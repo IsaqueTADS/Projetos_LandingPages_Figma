@@ -1,0 +1,63 @@
+.introducao{
+  max-width: 1500px;
+  overflow: hidden;
+  
+}
+.corpo-1{
+  max-width: 1500px;
+  margin: 0 auto;
+  background-image: url("/assets/img/Ellipse-efeito.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right -200px bottom -200px;
+  /* background-color: red; */
+}
+
+
+.container-introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  width: 100%;
+}
+
+.introducao-perfil{
+  overflow: hidden;
+}
+.introducao-perfil img {
+  display: block;
+  max-width: 500px;
+  object-fit:fill;
+}
+
+.introducao-conteudo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  width: 400px;
+}
+
+.introducao-conteudo a {
+  display: block;
+  padding: 15px 9px;
+  width: 190px;
+  border: solid 2px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.introducao-conteudo h1, span {
+  font-weight: bold;
+}
+.introducao-conteudo h1 {
+  font-size: 3rem;
+  line-height: 2.9rem;
+}
+.introducao-conteudo span {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.introducao-conteudo p {
+  color: #dcdcdd;
+}
