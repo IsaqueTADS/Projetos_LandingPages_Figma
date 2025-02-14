@@ -1,18 +1,22 @@
-const ButtonMenuHambu = document.querySelector(".bota-menu-hambu");
-const closeMenu = document.querySelector(".close-menu");
-const menuHamburguer = document.querySelector(".menu-hamburguer");
+const initMenuHamb = () => {
+  const ButtonMenuHambu = document.querySelector(".bota-menu-hambu");
+  const closeMenu = document.querySelector(".close-menu");
+  const menuHamburguer = document.querySelector(".menu-hamburguer");
 
-console.log(ButtonMenuHambu);
+  console.log(ButtonMenuHambu);
 
-function ativarMenuHamburguer() {
-  menuHamburguer.classList.toggle("ativar");
-  closeMenu.classList.toggle("ativar");
-}
-function desativarMenuHamburguer() {
-  menuHamburguer.classList.remove("ativar");
-  closeMenu.classList.remove("ativar");
-}
+  function ativarMenuHamburguer() {
+    menuHamburguer.classList.toggle("ativar");
+    closeMenu.classList.toggle("ativar");
+  }
+  function desativarMenuHamburguer() {
+    menuHamburguer.classList.remove("ativar");
+    closeMenu.classList.remove("ativar");
+  }
 
-closeMenu.addEventListener("click", desativarMenuHamburguer);
+  closeMenu.addEventListener("click", desativarMenuHamburguer);
 
-ButtonMenuHambu.addEventListener("click", ativarMenuHamburguer);
+  ButtonMenuHambu.addEventListener("click", ativarMenuHamburguer);
+};
+
+initMenuHamb();
