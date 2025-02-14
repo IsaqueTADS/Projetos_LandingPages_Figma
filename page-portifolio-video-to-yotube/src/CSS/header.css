@@ -1,0 +1,146 @@
+.cabecalho {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding: 0 30px;
+
+}
+.bota-menu-hambu {
+  display: none;
+}
+
+.close-menu {
+  display: none;
+}
+
+.cabecalho img {
+  width: 130px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+.nav-links li a {
+  padding: 16px 20px;
+  font-size: 20pt;
+  font-weight: 500;
+}
+.nav-links li a:hover {
+  color: var(--cor-laranja);
+}
+
+.botao-nav {
+  display: flex;
+  align-items: center;
+}
+
+.botao-nav a {
+  color: var(--cor-branco);
+  padding: 12px 40px;
+  background-color: var(--cor-laranja);
+  border-radius: 10px;
+}
+
+@media (max-width: 1237px) {
+  .nav-links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 923px) {
+
+  .botao-nav a {
+   
+    padding: 10px 24px;
+    font-size: 10pt;
+    
+
+  }
+  .cabecalho {
+    padding: 0 30px;
+    margin-top: 40px;
+  }
+
+  .menu-hamburguer {
+    display: none !important;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    background-color: #333;
+    width: 250px;
+    height: 50vh;
+    display: flex;
+    padding: 30px 0 0px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    border-radius: 0 0 8px 8px;
+    animation: menuSuave 0.9s forwards;
+  }
+
+  .close-menu {
+    justify-content: flex-start;
+    padding-bottom: 40px;
+  }
+
+  .close-menu:hover {
+    transform: scale(1.1);
+  }
+
+  .menu-hamburguer ul {
+    flex-direction: column;
+  }
+
+  .bota-menu-hambu {
+    display: block;
+  }
+  .bota-menu-hambu :hover {
+    transform: scale(1.2);
+  }
+  .ativar {
+    display: block !important;
+  }
+
+  .logo img {
+    margin-left: 40px;
+  }
+
+  @keyframes menuSuave {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .logo {
+    max-width: 30%;
+  }
+  .botao-nav a {
+   
+    padding: 8px 20px;
+    font-size: 10pt;
+    
+
+  }
+}

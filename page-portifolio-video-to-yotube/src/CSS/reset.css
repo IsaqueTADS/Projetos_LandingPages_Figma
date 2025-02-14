@@ -1,0 +1,61 @@
+/* Reset CSS - Remove estilos padrões do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove estilos de lista */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove decoração de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Define um estilo padrão para fontes */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  background-color: #121212;
+  color: #959595;
+  font-family: "Lato", serif;
+}
+
+/* Remove estilos padrões de botões e inputs */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Garante que imagens e vídeos não extrapolem os containers */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Corrige o comportamento do box-sizing para elementos input */
+input,
+textarea,
+button,
+select {
+  box-sizing: border-box;
+}
+
+/* Remove borda azul no foco de inputs e botões (para acessibilidade, pode ser ajustado) */
+*:focus {
+  outline: none;
+}
