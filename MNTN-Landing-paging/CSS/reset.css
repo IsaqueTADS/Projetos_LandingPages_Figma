@@ -1,0 +1,58 @@
+/* Reset básico para remover estilos padrão dos navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definição de fonte padrão e suavização */
+html {
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Removendo estilos padrão de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Reset de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Removendo estilos de botões e inputs */
+button, input, textarea, select {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Garantindo que imagens não ultrapassem seus containers */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Reset de tabelas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Reset de elementos semânticos para compatibilidade */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Definição de altura mínima no body */
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-color: #fff;
+  color: #000;
+}

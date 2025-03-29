@@ -1,0 +1,122 @@
+.main-introducao {
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+
+.follow ul li {
+  padding: 14px 0;
+}
+
+.follow ul li:first-child {
+  /* background-color: red; */
+  writing-mode: vertical-lr;
+  font-family: "Gilroy", "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.lis-content {
+  justify-content: center;
+  font-family: "Gilroy", "Poppins", sans-serif;
+  font-size: 18pt;
+  font-weight: 600;
+  margin-right: 30px;
+  position: relative;
+}
+
+
+.lis-content::after {
+  content: "";
+  height: 296px;
+  width: 3px;
+  background-color: #ffffff7b;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+}
+
+.lis-content a {
+  position: relative;
+}
+.lis-content ul li a {
+  position: relative;
+}
+
+.lis-content a:hover::after {
+  content: "";
+  height: 60px;
+  width: 3px;
+  /* background-color: #ffffffef; */
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-50%);
+  z-index: 200;
+}
+.lis-content ul li a:hover::after {
+  content: "";
+  height: 60px;
+  width: 3px;
+  /* background-color: #ffffffef; */
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 70.5px;
+  transform: translateY(-50%);
+  z-index: 200;
+}
+
+.lis-content ul li {
+  padding: 14px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lis-content ul li a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+.content-introducao {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.content-introducao h1 {
+  font-family: "Chronicle Display";
+  font-size: 66pt;
+  font-weight: 500;
+}
+
+.content-introducao p {
+  font-family: "Gilroy", "Poppins", sans-serif;
+  color: #fbd784;
+  font-size: 15pt;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  position: absolute;
+  margin-bottom: 10px;
+  top: -30px;
+  left: 100px;
+}
+.content-introducao p::before {
+  content: "";
+  background-color: #fbd784;
+  height: 2px;
+  width: 72px;
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  /* transform: translateY(-50%); Centraliza verticalmente */
+}
+
+.scroll-down a {
+  display: flex;
+  gap: 10px;
+}
