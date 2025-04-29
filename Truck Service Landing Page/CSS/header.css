@@ -1,0 +1,49 @@
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.header-container hr {
+  background-color: #333333;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-content {
+  display: flex;
+  gap: 8px;
+}
+
+.info-content img {
+  align-self: flex-start;
+}
+
+.header-nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  gap: 46px;
+}
+.header-nav a {
+  font-size: 14pt;
+  font-weight: 500;
+}
+
+.ligacao a {
+  background-color: #4762ff;
+  color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 14pt;
+  font-weight: 600;
+}
