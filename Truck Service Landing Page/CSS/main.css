@@ -10,6 +10,7 @@
 .background-caminhao {
   max-width: 1600px;
   margin: 0 auto;
+  padding: 100px 20px 30px 20px;
   background-image: url("/assets/img/caminhao.png");
   background-repeat: no-repeat;
   background-position-x: right;
@@ -18,9 +19,8 @@
 
 .main-content {
   max-width: 1200px;
-
   margin: 0 auto;
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
   display: flex;
   gap: 0;
 }
@@ -31,6 +31,9 @@
   gap: 20px;
   z-index: 200;
   flex: 0 0 auto;
+}
+.content-div img {
+  display: none;
 }
 
 .content-div h1 {
@@ -54,4 +57,37 @@
   align-self: flex-start;
   padding: 12px 34px;
   border-radius: 8px;
+}
+
+@media (max-width: 1096px) {
+  .main-content {
+    justify-content: center;
+    align-items: center;
+  }
+  .content-main {
+    padding-top: 30px;
+  }
+  .background-caminhao {
+    background-image: none;
+  }
+  .content-div {
+    width: fit-content;
+    justify-content: center;
+  }
+  .content-div img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+    width: 800px;
+  }
+
+  .content-div h1 {
+    font-size: 40pt;
+    line-height: 50px;
+  }
+}
+
+
+@media (max-width: 730px){
+  
 }
