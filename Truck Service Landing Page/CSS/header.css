@@ -20,10 +20,6 @@
   margin-bottom: 20px;
 }
 
-.menu_ham {
-  display: none;
-}
-
 .info-content {
   display: flex;
   gap: 8px;
@@ -59,6 +55,10 @@
   font-weight: 600;
 }
 
+.btn-open-menu {
+  display: none;
+}
+
 .closed-menu-mobile {
   display: none;
 }
@@ -88,9 +88,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  .menu_ham {
+
+  .btn-open-menu {
     display: block;
-    width: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   .menu-mobile {
@@ -145,5 +147,20 @@
       opacity: 1;
       transform: translateY(0px);
     }
+  }
+}
+
+@media (max-width: 475px) {
+  .btn-open-menu {
+    width: 30px;
+    height: 30px;
+  }
+  .logo {
+    width: 150px;
+  }
+
+  .ligacao a {
+    font-size: 8pt;
+    padding: 12px 19px;
   }
 }
