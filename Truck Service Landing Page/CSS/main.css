@@ -114,8 +114,8 @@
 
 @media (max-width: 475px) {
   .content-div h1 {
-    font-size: 25pt;
-    width: 18ch;
+    font-size: 20pt;
+    width: 19ch;
     line-height: 35px;
   }
 
@@ -124,7 +124,7 @@
   }
 
   .content-div p {
-    width: 40ch;
+    width: 35ch;
     font-size: 13pt;
   }
 

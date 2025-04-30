@@ -45,6 +45,13 @@
   font-weight: 500;
 }
 
+.ligacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
 .ligacao a {
   background-color: #4762ff;
   color: #ffffff;
@@ -152,15 +159,16 @@
 
 @media (max-width: 475px) {
   .btn-open-menu {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
   }
   .logo {
-    width: 150px;
+    width: 120px;
   }
 
   .ligacao a {
-    font-size: 8pt;
-    padding: 12px 19px;
+    max-width: 100%;
+    font-size: 6pt;
+    padding: 10px 13px;
   }
 }
