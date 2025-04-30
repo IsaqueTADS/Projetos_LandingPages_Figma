@@ -1,0 +1,72 @@
+#contato {
+  max-width: 100%;
+  background-image: url("/assets/img/contato.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 20px 30px 90px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  padding: 40px 70px;
+  margin-right: 100px;
+}
+.form-container h2 {
+  font-size: 40pt;
+  font-weight: bold;
+  line-height: 3.5rem;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container form input {
+  height: 45px;
+  text-align: left;
+  padding-left: 20px;
+  background-color: #4763ff2b;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form-container form button {
+  color: white;
+  background-color: #4762ff;
+  height: 55px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+@media (max-width: 625px) {
+ 
+  
+  .form-container {
+    margin: 0;
+    padding: 20px 50px;
+
+    gap: 8px;
+  }
+  .form-container h2 {
+    font-size: 30pt;
+    font-weight: bold;
+    line-height: 3rem;
+  }
+}
