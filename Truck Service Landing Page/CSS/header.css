@@ -79,6 +79,9 @@
 }
 
 @media (max-width: 730px) {
+  .header-container {
+    padding-top: 0px;
+  }
   .header-nav-content {
     flex-direction: row;
   }
@@ -88,9 +91,7 @@
   .info-content {
     display: none;
   }
-  .header-container {
-    padding: 60px 20px 30px 20px;
-  }
+
   .header-nav {
     flex-wrap: wrap;
     justify-content: center;
