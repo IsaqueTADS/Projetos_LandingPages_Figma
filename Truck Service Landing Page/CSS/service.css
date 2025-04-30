@@ -1,0 +1,109 @@
+.service-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.services-contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.title-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+div[data-service="content1"] {
+  background-image: url("/assets/img/service-content-1-removebg-preview.png");
+}
+
+.service-content {
+  display: grid;
+  width: 500px;
+  height: 290px;
+  border-radius: 8px;
+  grid-template-columns: 1fr 100px;
+  background-color: #f4f6fa;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+/* .service-content img {
+  max-width: 100%;
+} */
+
+.description-content-service p {
+  width: 35ch;
+}
+
+.description-content-service {
+  text-align: left;
+  padding: 30px;
+}
+
+.description-content-service h1 {
+  font-size: 18pt;
+  font-weight: bold;
+  line-height: 2rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1060px) {
+  .services-contents {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 534px) {
+  .title-service h2 {
+    font-size: 20pt;
+    margin-bottom: 6px;
+  }
+
+  .title-service p {
+    text-align: center;
+    width: auto;
+  }
+
+  .service-container {
+    padding: 40px 20px 30px 20px;
+  }
+
+  /* .service-content {
+    display: grid;
+    width: 500px;
+    height: 290px;
+    border-radius: 8px;
+    grid-template-columns: 1fr 100px;
+    background-color: #f4f6fa;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+  } */
+
+  .service-content {
+    width: 80vw;
+    grid-template-columns: 1fr;
+    height: 460px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 10px;
+  }
+
+  .description-content-service {
+    align-self: end;
+  }
+  .description-content-service p {
+    width: auto;
+  }
+}
