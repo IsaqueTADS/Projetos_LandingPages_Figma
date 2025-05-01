@@ -10,7 +10,6 @@ export default function initMenuMobile() {
 
   if (btnMenuMobile) {
     function openMenu(event) {
-      console.log(event.target);
       menuMobile.classList.add("ativo");
       OutSideClick(menuMobile, eventos, () => {
         menuMobile.classList.remove("ativo");
