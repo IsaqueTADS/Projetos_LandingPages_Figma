@@ -4,8 +4,9 @@ body {
 }
 
 .title {
-  font-size: 30pt;
+  font-size: 35pt;
   font-weight: bold;
+  line-height: 2.5rem;
 }
 
 @media (max-width: 812px) {

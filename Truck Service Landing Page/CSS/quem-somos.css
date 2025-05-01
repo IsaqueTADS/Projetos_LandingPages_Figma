@@ -1,0 +1,45 @@
+.quem-somos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 30px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  /* align-items: center; */
+}
+.quem-somos-description h2 {
+  margin-bottom: 15px;
+}
+
+.quem-somos-companies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.logo-comp {
+  display: block;
+  width: auto;
+  height: 100px;
+}
+
+@media (max-width: 1100px) {
+  .logo-comp {
+    height: 80px;
+  }
+}
+
+@media (max-width: 1012px) {
+  .quem-somos {
+    flex-direction: column;
+  }
+  .quem-somos-description h2 {
+    text-align: center;
+  }
+  .quem-somos-description p {
+    font-size: 11pt;
+  }
+  .quem-somos-companies {
+    justify-content: center;
+    align-items: center;
+  }
+}
