@@ -56,17 +56,19 @@
 }
 
 @media (max-width: 625px) {
- 
-  
+  #contato {
+    padding: 0;
+  }
+
   .form-container {
     margin: 0;
     padding: 20px 50px;
-
     gap: 8px;
+    justify-content: center;
   }
   .form-container h2 {
-    font-size: 30pt;
+    font-size: 25pt;
+    line-height: 2.4rem;
     font-weight: bold;
-    line-height: 3rem;
   }
 }
