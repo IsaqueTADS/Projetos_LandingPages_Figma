@@ -2,3 +2,15 @@ body {
   font-family: "Inter", sans-serif;
   position: relative;
 }
+
+.title {
+  font-size: 30pt;
+  font-weight: bold;
+}
+
+@media (max-width: 812px) {
+  .title {
+    font-size: 25pt;
+    font-weight: bold;
+  }
+}
